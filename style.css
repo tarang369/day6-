@@ -1,0 +1,52 @@
+.button {
+  padding: 12px 48px;
+  text-decoration: none;
+  border: 4px solid #09f;
+  color: #09f;
+  font-size: 24px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+#loginscreen {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background-image: url(1.jpg);
+  background-size: cover;
+  border: 3px solid #ccc;
+  display: none;
+}
+
+.cancel {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  background-color: #fff;
+  color: #000;
+  height: 35px;
+  width: 35px;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#cover {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+
+#loginscreen:target,
+#loginscreen:target + #cover {
+  display: block;
+}
